@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Java面向对象设计之代理模式, Homastin">
+    <meta name="keywords" content="早期个人笔记, Homastin">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Java面向对象设计之代理模式 | Homastin</title>
+    <title>早期个人笔记 | Homastin</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -290,12 +290,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://statics.sh1a.qingstor.com/2018/09/20/proxy.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Java面向对象设计之代理模式</h1>
+                    <h1 class="description center-align post-title">早期个人笔记</h1>
                 </div>
             </div>
         </div>
@@ -411,12 +411,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Java/">
-                                <span class="chip bg-color">Java</span>
+                            <a href="/tags/Vue/">
+                                <span class="chip bg-color">Vue</span>
                             </a>
                         
-                            <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
-                                <span class="chip bg-color">设计模式</span>
+                            <a href="/tags/Javascript/">
+                                <span class="chip bg-color">Javascript</span>
                             </a>
                         
                     </div>
@@ -427,8 +427,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/" class="post-category">
-                                软件设计
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                前端
                             </a>
                         
                     </div>
@@ -440,7 +440,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-09-20
+                    2021-08-30
                 </div>
                 
 
@@ -464,137 +464,215 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、模式动机"><a href="#一、模式动机" class="headerlink" title="一、模式动机"></a>一、模式动机</h2><p>在某些情况下，一个客户不想或者不能直接引用一个对象，此时可以通过一个称之为“代理”的第三者来实现间接引用。代理对象可以在客户端和目标对象之间起到中介的作用，并且可以通过代理对象去掉客户不能看到 的内容和服务或者添加客户需要的额外服务。</p>
-<p>通过引入一个新的对象来实现对真实对象的操作或者将新的对象作为真实对象的一个替身，这种实现机制即为代理模式，通过引入代理对象来间接访问一个对象，这就是代理模式的模式动机。</p>
-<h2 id="二、模式定义"><a href="#二、模式定义" class="headerlink" title="二、模式定义"></a>二、模式定义</h2><blockquote>
-<p>**代理模式(<code>Proxy Pattern</code>)**：给某一个对象提供一个代理，并由代理对象控制对原对象的引用。代理模式的英文叫做<code>Proxy</code>或<code>Surrogate</code>，它是一种对象结构型模式。</p>
+                <blockquote>
+<p>这是一个采用<code>Material Design</code>和响应式设计的 Hexo 博客主题。</p>
 </blockquote>
-<h2 id="三、模式结构"><a href="#三、模式结构" class="headerlink" title="三、模式结构"></a>三、模式结构</h2><h3 id="1-角色组成"><a href="#1-角色组成" class="headerlink" title="1. 角色组成"></a>1. 角色组成</h3><p>代理模式包含如下角色：</p>
-<ul>
-<li><code>Subject</code>: 抽象主题角色</li>
-<li><code>RealSubject</code>: 真实主题角色</li>
-<li><code>Proxy</code>: 代理主题角色</li>
-</ul>
-<h3 id="2-结构图"><a href="#2-结构图" class="headerlink" title="2. 结构图"></a>2. 结构图</h3><p><img src="https://statics.sh1a.qingstor.com/2018/09/20/proxy-structure.jpg" alt="代理模式结构图"></p>
-<h2 id="四、示例代码"><a href="#四、示例代码" class="headerlink" title="四、示例代码"></a>四、示例代码</h2><p>首先，是抽象的主题接口和真实主题类：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>blinkfox<span class="token punctuation">.</span>patterns<span class="token punctuation">.</span>proxy</span><span class="token punctuation">;</span>
+<h1 id="homastin-notes"><a href="#homastin-notes" class="headerlink" title="homastin notes"></a>homastin notes</h1><h2 id="1-wepy-手动封装promise-wepy-request-try-catch-失败问题"><a href="#1-wepy-手动封装promise-wepy-request-try-catch-失败问题" class="headerlink" title="1.wepy 手动封装promise ,wepy.request() try catch 失败问题"></a>1.wepy 手动封装promise ,wepy.request() try catch 失败问题</h2><pre><code>-- 解决办法
+app.wpy 加入 
+  import 'wepy-async-function'
+  constructor() {
+    super();
+    this.use('requestfix');
+    // 使API promise化
+    this.use('promisify');
+  }
+</code></pre>
+<h2 id="2-vue-项目使用axios"><a href="#2-vue-项目使用axios" class="headerlink" title="2.vue 项目使用axios"></a>2.vue 项目使用axios</h2><pre><code>-- 解决方法
+'Content-Type': 'application/x-www-form-urlencoded' 
+    需要使用 Set 集合 或者引入 qs库，使用qs.stringify() 方法
+'Content-Type': 'application/x-www-form-urlencoded' 
+  直接使用json
+</code></pre>
+<h2 id="3-vue-项目使用proxytable"><a href="#3-vue-项目使用proxytable" class="headerlink" title="3.vue 项目使用proxytable"></a>3.vue 项目使用proxytable</h2><p>  — 解决方法</p>
+<pre><code>proxyTable: {
+  '/apis': {
+    // 测试环境
+    target: 'http://www.thenewstep.cn/',  // 接口域名
+    changeOrigin: true,  //是否跨域
+    pathRewrite: {
+        '^/apis': ''   //需要rewrite重写的,
+    }              
+  }
 
-<span class="token comment">/**
- * 抽象主题类
- * Created by blinkfox on 2017/1/1.
- */</span>
-<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">ISubject</span> <span class="token punctuation">{</span>
+  
+</code></pre>
+<h2 id="4-git-初始化仓库-本地和远程"><a href="#4-git-初始化仓库-本地和远程" class="headerlink" title="4.git 初始化仓库 本地和远程"></a>4.git 初始化仓库 本地和远程</h2><p>  <strong>Command line instructions</strong></p>
+<p>  Git global setup<br>  </p><pre class="line-numbers language-none"><code class="language-none">git config --global user.name "xxx"
+git config --global user.email "xx@xx.com"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><br>  Create a new repository<br>  <pre class="line-numbers language-none"><code class="language-none">git clone git@182.254.xxx.xxx:user/test.git 
+cd test
+touch README. md
+git add README . md
+git commit 一m "add README"
+git push 一u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>  Existing folder<br>  <pre class="line-numbers language-none"><code class="language-none">cd existing_ folder
+git init
+git remote add origin git@182.254.xx.xx:user/test.git
+git add
+git commit 一m "Initial commit"
+git push 一u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>  Existing Git repository<br>  <pre class="line-numbers language-none"><code class="language-none">cd existing_ repo
+git remote rename origin old一origin 
+git remote add origin git@182.254.xx.xx:user/test.git
+git push 一u origin 一all
+git push 一u origin 一tags <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p></p>
+<h2 id="5-ruduce的高级用法"><a href="#5-ruduce的高级用法" class="headerlink" title="5.ruduce的高级用法"></a>5.ruduce的高级用法</h2><p>  <img src="https://bmsoft.oss-cn-shanghai.aliyuncs.com/images/reduce.png" alt="avatar"></p>
+<p>  <a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000005921341">https://segmentfault.com/a/1190000005921341</a> 讲解reduce的精华帖</p>
+<pre><code>reduce 支持两个参数 1 callback 2 initalValue
+-- 1 没有initalValue 
+  那么callback 里的prev curr index arr 中prev 就是数组中的第一个，curr是第二个 index为1
+-- 2 有initalValue
+    那么callback 中的prev 为initalValue curr 为 数组第一项
 
-    <span class="token comment">/**
-     * 定义一个方法
-     */</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  Note: 空数组没有initalValue 将会是一个error
+</code></pre>
+<h2 id="6-代码的简洁之道"><a href="#6-代码的简洁之道" class="headerlink" title="6.代码的简洁之道"></a>6.代码的简洁之道</h2><p>  通过 flag 的 true 或 false，来判断执行逻辑，违反了一个函数干一件事的原则。</p>
+<p>  Bad:</p>
+<pre><code>function createFile(name, temp) {
+  if (temp) {
+    fs.create(`./temp/${name}`);
+  } else {
+    fs.create(name);
+  }
+}
+</code></pre>
+<p>  Good</p>
+<pre><code>function createFile(name) {
+  fs.create(name);
+}
+function createFileTemplate(name) {
+  createFile(`./temp/${name}`)
+}   
+</code></pre>
+<h2 id="7-this指向问题"><a href="#7-this指向问题" class="headerlink" title="7. this指向问题"></a>7. this指向问题</h2><p>  1、函数执行时首先看函数名前面是否有”.”，有的话，”.”前面是谁,this就是谁；没有的话this就是window</p>
+<pre><code>  function fn(){
+    console.log(this);
+  }
+  var obj={fn:fn};
+  fn();//this-&gt;window
+  obj.fn();//this-&gt;obj
+  function sum(){
+      fn();//this-&gt;window
+  }
+  sum();
+  var oo={
+  sum:function(){
+  console.log(this);//this-&gt;oo
+        fn()；//this-&gt;window
+    }
+  };
+  oo.sum();
+</code></pre>
+<p>  必须要注意一点：类中某一个属性值(方法)，方法中的this需要看方法执行的时候，前面是否有”.”,才能知道this是谁。</p>
+<pre><code>function Fn(){
+  this.x=100；//this-&gt;f1
+  this.getX=function(){
+  console.log(this.x);//this-&gt;需要看getX执行的时候才知道
+    }
+}
+var f1=new Fn;
+f1.getX();//-&gt;方法中的this是f1，所以f1.x=100
+var ss=f1.getX;
+ss();//-&gt;方法中的this是window -&gt;undefined
+</code></pre>
+<h2 id="8-apply，call，-bind-用法区别"><a href="#8-apply，call，-bind-用法区别" class="headerlink" title="8.apply，call， bind 用法区别"></a>8.apply，call， bind 用法区别</h2><pre><code>我们先来看一个问题，想在下面的例子中this绑定obj,怎么实现？
 
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+  var obj={name:"浪里行舟"};
+  function fn(){
+    console.log(this);//this=&gt;window
+  }
+  fn();
+  obj.fn();//-&gt;Uncaught TypeError:obj.fn is not a function
+</code></pre>
+<h4 id="如果直接绑定obj-fn-程序就会报错。这里我们应该用fn-call-obj-就可以实现this绑定obj-接下来我们详细介绍下call方法："><a href="#如果直接绑定obj-fn-程序就会报错。这里我们应该用fn-call-obj-就可以实现this绑定obj-接下来我们详细介绍下call方法：" class="headerlink" title="如果直接绑定obj.fn(),程序就会报错。这里我们应该用fn.call(obj)就可以实现this绑定obj,接下来我们详细介绍下call方法："></a>如果直接绑定obj.fn(),程序就会报错。这里我们应该用fn.call(obj)就可以实现this绑定obj,接下来我们详细介绍下call方法：</h4><h4 id="call方法的作用"><a href="#call方法的作用" class="headerlink" title="call方法的作用:"></a>call方法的作用:</h4><h4 id="①首先我们让原型上的call方法执行，在执行call方法的时候，我们让fn方法中的this变为第一个参数obj；然后再把fn这个函数执行。"><a href="#①首先我们让原型上的call方法执行，在执行call方法的时候，我们让fn方法中的this变为第一个参数obj；然后再把fn这个函数执行。" class="headerlink" title="①首先我们让原型上的call方法执行，在执行call方法的时候，我们让fn方法中的this变为第一个参数obj；然后再把fn这个函数执行。"></a>①首先我们让原型上的call方法执行，在执行call方法的时候，我们让fn方法中的this变为第一个参数obj；然后再把fn这个函数执行。</h4><h4 id="②call还可以传值，在严格模式下和非严格模式下，得到值不一样。"><a href="#②call还可以传值，在严格模式下和非严格模式下，得到值不一样。" class="headerlink" title="②call还可以传值，在严格模式下和非严格模式下，得到值不一样。"></a>②call还可以传值，在严格模式下和非严格模式下，得到值不一样。</h4><pre><code>//在非严格模式下
+var obj={name:"浪里行舟 "};
+function fn(num1,num2){
+  console.log(num1+num2);
+  console.log(this);
+}
+fn.call(100,200);//this-&gt;100 num1=200 num2=undefined
+fn.call(obj,100,200);//this-&gt;obj num1=100 num2=200
+fn.call();//this-&gt;window
+fn.call(null);//this-&gt;window
+fn.call(undefined);//this-&gt;window
+</code></pre>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><pre><code>  //严格模式下 
+  fn.call();//在严格模式下this-&gt;undefined
+  fn.call(null);// 在严格模式 下this-&gt;null
+  fn.call(undefined);//在严格模式下this-&gt;undefined
+</code></pre>
+<h4 id="bind体现了预处理思想：事先把fn的this改变为我们想要的结果，并且把对应的参数值也准备好，以后要用到了，直接的执行即可"><a href="#bind体现了预处理思想：事先把fn的this改变为我们想要的结果，并且把对应的参数值也准备好，以后要用到了，直接的执行即可" class="headerlink" title="bind体现了预处理思想：事先把fn的this改变为我们想要的结果，并且把对应的参数值也准备好，以后要用到了，直接的执行即可"></a>bind体现了预处理思想：事先把fn的this改变为我们想要的结果，并且把对应的参数值也准备好，以后要用到了，直接的执行即可</h4><h4 id="call和apply直接执行函数，而bind需要再一次调用。"><a href="#call和apply直接执行函数，而bind需要再一次调用。" class="headerlink" title="call和apply直接执行函数，而bind需要再一次调用。"></a>call和apply直接执行函数，而bind需要再一次调用。</h4><pre><code>var a ={
+      name : "Cherry",
+      fn : function (a,b) {
+          console.log( a + b)
+      }
+  }
+var b = a.fn;
+b.bind(a,1,2)
+// 如需执行函数 需要手动调用
+b.bind(a,1,2)()
+</code></pre>
+<h2 id="9-箭头函数的this指向"><a href="#9-箭头函数的this指向" class="headerlink" title="9.箭头函数的this指向"></a>9.箭头函数的this指向</h2><p>现在，箭头函数完全修复了this的指向，<strong>箭头函数没有自己的this，箭头函数的this不是调用的时候决定的，而是在定义的时候处在的对象就是它的this。</strong></p>
+<p>换句话说，<strong>箭头函数的this看外层的是否有函数，如果有，外层函数的this就是内部箭头函数的this，如果没有，则this是window。</strong></p>
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000016680885">你还没搞懂this?</a></p>
+<p><a target="_blank" rel="noopener" href="https://juejin.im/post/59bfe84351882531b730bac2">this、apply、call、bind++</a></p>
+<h2 id="10-js在一个数组里随机选出不重复xx项"><a href="#10-js在一个数组里随机选出不重复xx项" class="headerlink" title="10.js在一个数组里随机选出不重复xx项?"></a>10.js在一个数组里随机选出不重复xx项?</h2><pre><code>var result = [];
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>blinkfox<span class="token punctuation">.</span>patterns<span class="token punctuation">.</span>proxy</span><span class="token punctuation">;</span>
+var count = arr.length;
+for (var i = 0; i &lt; 10; i++) {
+    var index = ~~(Math.random() * count) + i;
+    result[i] = arr[index];
+    arr[index] = arr[i];
+    count--;
+}
 
-<span class="token comment">/**
- * 真实主题类
- * Created by blinkfox on 2017/1/1.
- */</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">RealSubject</span> <span class="token keyword">implements</span> <span class="token class-name">ISubject</span> <span class="token punctuation">{</span>
+console.log(result);
+</code></pre>
+<h1 id="-1"><a href="#-1" class="headerlink" title=""></a></h1><pre><code>算法简述：
 
-    <span class="token comment">/**
-     * 实现方法
-     */</span>
-    <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"真实主题类请求方法..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+把源数组分成左右两段，左边按顺序递增，保存已选择的随机数；右侧是剩余可选的数值；
+从右侧选一个，与左    侧最后一个位置的数值交换就可以达到目的。
 
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+然后考虑把左侧用一个新数组表示，右侧选中的数移入新数组，再将左侧应该交换过来的值移过来……
+</code></pre>
+<p><img src="https://bmsoft.oss-cn-shanghai.aliyuncs.com/images/4175043505-57cd8230d552b.png" alt="avatar"></p>
+<h2 id="11-利用-a-标签解析-URL"><a href="#11-利用-a-标签解析-URL" class="headerlink" title="11.利用 a 标签解析 URL"></a>11.利用 a 标签解析 URL</h2><h5 id="创建一个-a-标签将需要解析的-URL-赋值给-a-的-href-属性，然后我们就能很方便的拿到这些内容。代码如下："><a href="#创建一个-a-标签将需要解析的-URL-赋值给-a-的-href-属性，然后我们就能很方便的拿到这些内容。代码如下：" class="headerlink" title="创建一个 a 标签将需要解析的 URL 赋值给 a 的 href 属性，然后我们就能很方便的拿到这些内容。代码如下："></a>创建一个 a 标签将需要解析的 URL 赋值给 a 的 href 属性，然后我们就能很方便的拿到这些内容。代码如下：</h5><pre><code>function parseURL(url) {
+    var a =  document.createElement('a');
+    a.href = url;
+    return {
+        host: a.hostname,
+        port: a.port,
+        query: a.search,
+        params: (function(){
+            var ret = {},
+                seg = a.search.replace(/^\?/,'').split('&amp;'),
+                len = seg.length, i = 0, s;
+            for (;i&lt;len;i++) {
+                if (!seg[i]) { continue; }
+                s = seg[i].split('=');
+                ret[s[0]] = s[1];
+            }
+            return ret;
+        })(),
+        hash: a.hash.replace('#','')
+    };
+}
 
-<p>然后，是代理类：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>blinkfox<span class="token punctuation">.</span>patterns<span class="token punctuation">.</span>proxy</span><span class="token punctuation">;</span>
 
-<span class="token comment">/**
- * 代理类
- * Created by blinkfox on 2017/1/1.
- */</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Proxy</span> <span class="token keyword">implements</span> <span class="token class-name">ISubject</span> <span class="token punctuation">{</span>
 
-    <span class="token keyword">private</span> <span class="token class-name">ISubject</span> subject<span class="token punctuation">;</span>
 
-    <span class="token keyword">public</span> <span class="token class-name">Proxy</span><span class="token punctuation">(</span><span class="token class-name">ISubject</span> subject<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>subject <span class="token operator">=</span> subject<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
 
-    <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">before</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>subject<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">after</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
 
-    <span class="token comment">/**
-     * 预处理
-     */</span>
-    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">before</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"执行前(before)的处理..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
 
-    <span class="token comment">/**
-     * 善后处理
-     */</span>
-    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">after</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"执行后(after)的处理..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
 
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>最后，是客户端场景测试类：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>blinkfox<span class="token punctuation">.</span>patterns<span class="token punctuation">.</span>proxy</span><span class="token punctuation">;</span>
 
-<span class="token comment">/**
- * 代理模式客户端场景类
- * Created by blinkfox on 2017/1/1.
- */</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ProxyClient</span> <span class="token punctuation">{</span>
 
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token class-name">ISubject</span> subject <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RealSubject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token class-name">Proxy</span> proxy <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Proxy</span><span class="token punctuation">(</span>subject<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        proxy<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
 
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="五、模式分析"><a href="#五、模式分析" class="headerlink" title="五、模式分析"></a>五、模式分析</h2><h3 id="1-优点"><a href="#1-优点" class="headerlink" title="1. 优点"></a>1. 优点</h3><p>代理模式的优点：</p>
-<ul>
-<li>代理模式能够协调调用者和被调用者，在一定程度上降低了系 统的耦合度。</li>
-<li>远程代理使得客户端可以访问在远程机器上的对象，远程机器可能具有更好的计算性能与处理速度，可以快速响应并处理客户端请求。</li>
-<li>虚拟代理通过使用一个小对象来代表一个大对象，可以减少系统资源的消耗，对系统进行优化并提高运行速度。</li>
-<li>保护代理可以控制对真实对象的使用权限。</li>
-</ul>
-<h3 id="2-缺点"><a href="#2-缺点" class="headerlink" title="2. 缺点"></a>2. 缺点</h3><p>代理模式的缺点：</p>
-<ul>
-<li>由于在客户端和真实主题之间增加了代理对象，因此有些类型的代理模式可能会造成请求的处理速度变慢。</li>
-<li>实现代理模式需要额外的工作，有些代理模式的实现非常复杂。</li>
-</ul>
-<h3 id="3-适用环境"><a href="#3-适用环境" class="headerlink" title="3. 适用环境"></a>3. 适用环境</h3><p>根据代理模式的使用目的，常见的代理模式有以下几种类型：</p>
-<ul>
-<li><strong>远程(Remote)代理</strong>：为一个位于不同的地址空间的对象提供一个本地的代理对象，这个不同的地址空间可以是在同一台主机中，也可是在另一台主机中，远程代理又叫做大使(Ambassador)。</li>
-<li><strong>虚拟(Virtual)代理</strong>：如果需要创建一个资源消耗较大的对象，先创建一个消耗相对较小的对象来表示，真实对象只在需要时才会被真正创建。</li>
-<li><strong>Copy-on-Write代理</strong>：它是虚拟代理的一种，把复制（克隆）操作延迟 到只有在客户端真正需要时才执行。一般来说，对象的深克隆是一个开销较大的操作，Copy-on-Write代理可以让这个操作延迟，只有对象被用到的时候才被克隆。</li>
-<li><strong>保护(Protect or Access)代理</strong>：控制对一个对象的访问，可以给不同的用户提供不同级别的使用权限。</li>
-<li><strong>缓冲(Cache)代理</strong>：为某一个目标操作的结果提供临时的存储空间，以便多个客户端可以共享这些结果。</li>
-<li><strong>防火墙(Firewall)代理</strong>：保护目标不让恶意用户接近。</li>
-<li><strong>同步化(Synchronization)代理</strong>：使几个用户能够同时使用一个对象而没有冲突。</li>
-<li><strong>智能引用(Smart Reference)代理</strong>：当一个对象被引用时，提供一些额外的操作，如将此对象被调用的次数记录下来等。</li>
-</ul>
-<h2 id="模式总结"><a href="#模式总结" class="headerlink" title="模式总结"></a>模式总结</h2><ul>
-<li>在代理模式中，要求给某一个对象提供一个代理，并由代理对象控制对原对象的引用。代理模式的英文叫做Proxy或Surrogate，它是一种对象结构型模式。</li>
-<li>代理模式包含三个角色：抽象主题角色声明了真实主题和代理主题的共同接口；代理主题角色内部包含对真实主题的引用，从而可以在任何时候操作真实主题对象；真实主题角色定义了代理角色所代表的真实对象，在真实主题角色中实现了真实的业务操作，客户端可以通过代理主题角色间接调用真实主题角色中定义的方法。</li>
-<li>代理模式的优点在于能够协调调用者和被调用者，在一定程度上降低了系统的耦合度；其缺点在于由于在客户端和真实主题之间增加了代理对象，因此有些类型的代理模式可能会造成请求的处理速度变慢，并且实现代理模式需要额外的工作，有些代理模式的实现非常复杂。远程代理为一个位于不同的地址空间的对象提供一个本地的代表对象，它使得客户端可以访问在远程机器上的对象，远程机器可能具有更好的计算性能与处理速度，可以快速响应并处理客户端请求。</li>
-<li>如果需要创建一个资源消耗较大的对象，先创建一个消耗相对较小的对象来表示，真实对象只在需要时才会被真正创建，这个小对象称为虚拟代理。虚拟代理通过使用一个小对象来代表一个大对象，可以减少系统资源的消耗，对系统进行优化并提高运行速度。</li>
-<li>保护代理可以控制对一个对象的访问，可以给不同的用户提供不同级别的使用权限。</li>
-</ul>
+
+
+
+  
+</code></pre>
 
                 
             </div>
@@ -611,7 +689,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">blinkfox</a>
+                    <a href="/about" rel="external nofollow noreferrer">Homastin</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -621,7 +699,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://homastin.cn/2018/09/20/ruan-jian-she-ji/she-ji-mo-shi/java-mian-xiang-dui-xiang-she-ji-zhi-dai-li-mo-shi/">http://homastin.cn/2018/09/20/ruan-jian-she-ji/she-ji-mo-shi/java-mian-xiang-dui-xiang-she-ji-zhi-dai-li-mo-shi/</a>
+                    <a href="http://homastin.cn/2021/08/30/qian-duan/zao-qi-ge-ren-bi-ji/">http://homastin.cn/2021/08/30/qian-duan/zao-qi-ge-ren-bi-ji/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -634,7 +712,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">blinkfox</a>
+                    <a href="/about" target="_blank">Homastin</a>
                     !
                 </span>
             </div>
@@ -659,12 +737,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Java/">
-                                    <span class="chip bg-color">Java</span>
+                                <a href="/tags/Vue/">
+                                    <span class="chip bg-color">Vue</span>
                                 </a>
                             
-                                <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
-                                    <span class="chip bg-color">设计模式</span>
+                                <a href="/tags/Javascript/">
+                                    <span class="chip bg-color">Javascript</span>
                                 </a>
                             
                         </div>
@@ -834,16 +912,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2018/09/21/ruan-jian-she-ji/she-ji-mo-shi/java-mian-xiang-dui-xiang-she-ji-zhi-zhuang-tai-mo-shi/">
+                <a href="/2021/08/30/qian-duan/zao-qi-ge-ren-bi-ji/">
                     <div class="card-image">
                         
-                        <img src="https://statics.sh1a.qingstor.com/2018/09/21/state.jpg" class="responsive-img" alt="Java面向对象设计之状态模式">
                         
-                        <span class="card-title">Java面向对象设计之状态模式</span>
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="早期个人笔记">
+                        
+                        <span class="card-title">早期个人笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -853,30 +933,31 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2018-09-21
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/" class="post-category">
-                                    软件设计
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Java/">
-                        <span class="chip bg-color">Java</span>
+                    <a href="/tags/Vue/">
+                        <span class="chip bg-color">Vue</span>
                     </a>
                     
-                    <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
-                        <span class="chip bg-color">设计模式</span>
+                    <a href="/tags/Javascript/">
+                        <span class="chip bg-color">Javascript</span>
                     </a>
                     
                 </div>
@@ -890,12 +971,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2018/09/14/ruan-jian-she-ji/she-ji-mo-shi/java-mian-xiang-dui-xiang-she-ji-zhi-gong-han-fang-fa-mo-shi/">
+                <a href="/2021/08/26/hello-world/">
                     <div class="card-image">
                         
-                        <img src="https://statics.sh1a.qingstor.com/2018/09/14/factory.jpg" class="responsive-img" alt="Java面向对象设计之工厂方法模式">
                         
-                        <span class="card-title">Java面向对象设计之工厂方法模式</span>
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -906,31 +988,15 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2018-09-14
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-26
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/" class="post-category">
-                                    软件设计
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Homastin
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Java/">
-                        <span class="chip bg-color">Java</span>
-                    </a>
-                    
-                    <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
-                        <span class="chip bg-color">设计模式</span>
-                    </a>
-                    
                 </div>
                 
             </div>
