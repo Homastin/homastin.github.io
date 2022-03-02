@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Java面向对象设计之状态模式, Homastin">
+    <meta name="keywords" content="Homastin">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Java面向对象设计之状态模式 | Homastin</title>
+    <title>Homastin</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -290,12 +290,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://statics.sh1a.qingstor.com/2018/09/21/state.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Java面向对象设计之状态模式</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -409,29 +409,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/Java/">
-                                <span class="chip bg-color">Java</span>
-                            </a>
-                        
-                            <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
-                                <span class="chip bg-color">设计模式</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/" class="post-category">
-                                软件设计
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -440,7 +423,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-09-21
+                    2022-02-22
                 </div>
                 
 
@@ -464,174 +447,69 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、模式动机"><a href="#一、模式动机" class="headerlink" title="一、模式动机"></a>一、模式动机</h2><p>在很多情况下，一个对象的行为取决于一个或多个动态变化的属性，这样的属性叫做状态，这样的对象叫做有状态的(<code>stateful</code>)对象，这样的对象状态是从事先定义好的一系列值中取出的。当一个这样的对象与外部事件产生互动时，其内部状态就会改变，从而使得系统的行为也随之发生变化。</p>
-<h2 id="二、模式定义"><a href="#二、模式定义" class="headerlink" title="二、模式定义"></a>二、模式定义</h2><blockquote>
-<p>**状态模式(<code>State Pattern</code>)**：允许一个对象在其内部状态改变时改变它的行为，对象看起来似乎修改了它的类。其别名为状态对象(<code>Objects for States</code>)，状态模式是一种对象行为型模式。</p>
-</blockquote>
-<h2 id="三、模式结构"><a href="#三、模式结构" class="headerlink" title="三、模式结构"></a>三、模式结构</h2><h3 id="1-角色组成："><a href="#1-角色组成：" class="headerlink" title="1. 角色组成："></a>1. 角色组成：</h3><p>状态模式包含如下角色：</p>
+                <h1 id="大前端组规划"><a href="#大前端组规划" class="headerlink" title="大前端组规划"></a>大前端组规划</h1><h2 id="1-人员能力分层"><a href="#1-人员能力分层" class="headerlink" title="1.人员能力分层"></a>1.人员能力分层</h2><p>首先不可避免的前端技术人员会出现能力的差别，从入门级别到专家级别,很多公司或者领导会讲，实现扁平式的管理，但是这不等于所有人的能力是扁平的，更不意味着所有人最终是扁平的，责任和权限也是和能力挂钩的。</p>
+<p>首先需要对人员进行分层，将人员按照技术水平首先分层，按照简单的评级标准：</p>
+<p>​    <code>后面可以根据公司的技术等级b1-b10划分对应的等级。</code></p>
 <ul>
-<li><code>Context</code>: 环境类</li>
-<li><code>State</code>: 抽象状态角色</li>
-<li><code>ConcreteState</code>: 具体状态角色类</li>
+<li>初中级：初级工程师、中级工程师，可以完成简单的业务需求，在有较好较完整的项目基础上可以复制粘贴代码；</li>
+<li>技术专家：高级工程师、技术专家，可以完成项目的完整开发，独立的完成技术攻关，项目的整体把控，和其他职能共同推进项目；</li>
+<li>资深专家：可以组织团队或者搭建平台，完成团队目标，进行项目立项等。</li>
 </ul>
-<h3 id="2-结构图："><a href="#2-结构图：" class="headerlink" title="2. 结构图："></a>2. 结构图：</h3><p><img src="https://statics.sh1a.qingstor.com/2018/09/21/state-structure.jpg" alt="状态模式结构图"></p>
-<h3 id="3-时序图："><a href="#3-时序图：" class="headerlink" title="3. 时序图："></a>3. 时序图：</h3><p><img src="https://statics.sh1a.qingstor.com/2018/09/21/state-seq.jpg" alt="状态模式时序图"></p>
-<h2 id="四、示例代码"><a href="#四、示例代码" class="headerlink" title="四、示例代码"></a>四、示例代码</h2><p>首先，是抽象的状态角色接口：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">/**
- * 抽象状态角色
- * Created by blinkfox on 16/7/12.
- */</span>
-<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">IState</span> <span class="token punctuation">{</span>
-
-    <span class="token comment">/**
-     * 抽象方法1
-     */</span>
-    <span class="token keyword">void</span> <span class="token function">handle1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    <span class="token comment">/**
-     * 抽象方法2
-     */</span>
-    <span class="token keyword">void</span> <span class="token function">handle2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>接下来，是多个具体的状态角色类，分别如下：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">/**
- * 具体状态角色类1
- * Created by blinkfox on 16/7/12.
- */</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ConcreteState1</span> <span class="token keyword">implements</span> <span class="token class-name">IState</span> <span class="token punctuation">{</span>
-
-    <span class="token comment">/**
-     * 具体状态角色类1中的方法1
-     */</span>
-    <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">handle1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"执行了具体状态角色类1中的方法1..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token comment">/**
-     * 具体状态角色类1中的方法2
-     */</span>
-    <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">handle2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"执行了具体状态角色类1中的方法2..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">/**
- * 具体状态角色类2
- * Created by blinkfox on 16/7/12.
- */</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ConcreteState2</span> <span class="token keyword">implements</span> <span class="token class-name">IState</span> <span class="token punctuation">{</span>
-
-    <span class="token comment">/**
-     * 具体状态角色类2中的方法1
-     */</span>
-    <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">handle1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"执行了具体状态角色类2中的方法1..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token comment">/**
-     * 具体状态角色类2中的方法2
-     */</span>
-    <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">handle2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"执行了具体状态角色类2中的方法2..."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>然后，是环境类：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">/**
- * 环境角色类
- * Created by blinkfox on 16/7/12.
- */</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Context</span> <span class="token punctuation">{</span>
-
-    <span class="token comment">// 当前状态</span>
-    <span class="token keyword">private</span> <span class="token class-name">IState</span> state<span class="token punctuation">;</span>
-
-    <span class="token comment">/**
-     * 构造方法
-     * @param state
-     */</span>
-    <span class="token keyword">public</span> <span class="token class-name">Context</span><span class="token punctuation">(</span><span class="token class-name">IState</span> state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> state<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token comment">/**
-     * 方法1
-     */</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">handle1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span><span class="token function">handle1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token comment">/**
-     * 方法2
-     */</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">handle2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span><span class="token function">handle2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>最后，是用于测试状态模式的客户端场景类：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">/**
- * 状态模式的客户端场景累
- * Created by blinkfox on 16/7/12.
- */</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">StateClient</span> <span class="token punctuation">{</span>
-
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token class-name">Context</span> context <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Context</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ConcreteState1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        context<span class="token punctuation">.</span><span class="token function">handle1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        context<span class="token punctuation">.</span><span class="token function">handle2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="五、模式分析"><a href="#五、模式分析" class="headerlink" title="五、模式分析"></a>五、模式分析</h2><ul>
-<li>状态模式描述了对象状态的变化以及对象如何在每一种状态下表现出不同的行为。</li>
-<li>状态模式的关键是引入了一个抽象接口来专门表示对象的状态，这个类我们叫做抽象状态接口，而对象的每一种具体状态类都实现了该类，并在不同具体状态类中实现了不同状态的行为，包括各种状态之间的转换。</li>
-</ul>
-<p>在状态模式结构中需要理解环境类与抽象状态类的作用：</p>
-<ul>
-<li>环境类实际上就是拥有状态的对象，环境类有时候可以充当状态管理器(State Manager)的角色，可以在环境类中对状态进行切换操作。</li>
-<li>抽象状态类可以是抽象类，也可以是接口，不同状态类就是继承这个父类的不同子类，状态类的产生是由于环境类存在多个状态，同时还满足两个条件： 这些状态经常需要切换，在不同的状态下对象的行为不同。因此可以将不同对象下的行为单独提取出来封装在具体的状态类中，使得环境类对象在其内部状态改变时可以改变它的行为，对象看起来似乎修改了它的类，而实际上是由于切换到不同的具体状态类实现的。由于环境类可以设置为任一具体状态类，因此它针对抽象状态类进行编程，在程序运行时可以将任一具体状态类的对象设置到环境类中，从而使得环境类可以改变内部状态，并且改变行为。</li>
-</ul>
-<h3 id="1-优点"><a href="#1-优点" class="headerlink" title="1. 优点"></a>1. 优点</h3><p>状态模式的优点：</p>
-<ul>
-<li>封装了转换规则。</li>
-<li>枚举可能的状态，在枚举状态之前需要确定状态种类。</li>
-<li>将所有与某个状态有关的行为放到一个类中，并且可以方便地增加新的状态，只需要改变对象状态即可改变对象的行为。</li>
-<li>允许状态转换逻辑与状态对象合成一体，而不是某一个巨大的条件语句块。</li>
-<li>可以让多个环境对象共享一个状态对象，从而减少系统中对象的个数。</li>
-</ul>
-<h3 id="2-缺点"><a href="#2-缺点" class="headerlink" title="2. 缺点"></a>2. 缺点</h3><p>状态模式的缺点：</p>
-<ul>
-<li>状态模式的使用必然会增加系统类和对象的个数。</li>
-<li>状态模式的结构与实现都较为复杂，如果使用不当将导致程序结构和代码的混乱。</li>
-<li>状态模式对“开闭原则”的支持并不太好，对于可以切换状态的状态模式，增加新的状态类需要修改那些负责状态转换的源代码，否则无法切换到新增状态；而且修改某个状态类的行为也需修改对应类的源代码。</li>
-</ul>
-<h3 id="3-适用环境"><a href="#3-适用环境" class="headerlink" title="3.适用环境"></a>3.适用环境</h3><p>在以下情况下可以使用状态模式：</p>
-<ul>
-<li>对象的行为依赖于它的状态（属性）并且可以根据它的状态改变而改变它的相关行为。</li>
-<li>代码中包含大量与对象状态有关的条件语句，这些条件语句的出现，会导致代码的可维护性和灵活性变差，不能方便地增加和删除状态，使客户类与类库之间的耦合增强。在这些条件语句中包含了对象的行为，而且这些条件对应于对象的各种状态。</li>
-</ul>
-<blockquote>
-<p>状态模式在工作流或游戏等类型的软件中得以广泛使用，甚至可以用于这些系统的核心功能设计，如在政府OA办公系统中，一个批文的状态有多种：尚未办理；正在办理；正在批示；正在审核；已经完成等各种状态，而且批文状态不同时对批文的操作也有所差异。使用状态模式可以描述工作流对象（如批文）的状态转换以及不同状态下它所具有的行为。</p>
-</blockquote>
-<h2 id="六、总结"><a href="#六、总结" class="headerlink" title="六、总结"></a>六、总结</h2><ul>
-<li>状态模式允许一个对象在其内部状态改变时改变它的行为，对象看起来似乎修改了它的类。其别名为状态对象，状态模式是一种对象行为型模式。</li>
-<li>状态模式包含三个角色：环境类又称为上下文类，它是拥有状态的对象，在环境类中维护一个抽象状态类State的实例，这个实例定义当前状态，在具体实现时，它是一个State子类的对象，可以定义初始状态；抽象状态类用于定义一个接口以封装与环境类的一个特定状态相关的行为；具体状态类是抽象状态类的子类，每一个子类实现一个与环境类的一个状态相关的行为，每一个具体状态类对应环境的一个具体状态，不同的具体状态类其行为有所不同。</li>
-<li>状态模式描述了对象状态的变化以及对象如何在每一种状态下表现出不同的行为。</li>
-<li>状态模式的主要优点在于封装了转换规则，并枚举可能的状态，它将所有与某个状态有关的行为放到一个类中，并且可以方便地增加新的状态，只需要改变对象状态即可改变对象的行为，还可以让多个环境对象共享一个状态对象，从而减少系统中对象的个数；其缺点在于使用状态模式会增加系统类和对象的个数，且状态模式的结构与实现都较为复杂，如果使用不当将导致程序结构和代码的混乱，对于可以切换状态的状态模式不满足“开闭原则”的要求。</li>
-<li>状态模式适用情况包括：对象的行为依赖于它的状态（属性）并且可以根据它的状态改变而改变它的相关行为；代码中包含大量与对象状态有关的条件语句，这些条件语句的出现，会导致代码的可维护性和灵活性变差，不能方便地增加和删除状态，使客户类与类库之间的耦合增强。</li>
-</ul>
+<p>##2.研发分层</p>
+<p>公司研发人员达到一定规模，项目达到一定的复杂度，具体的研发任务会分层。简单的可以分为业务以及技术基础建设，复杂的会分为业务组，技术基础建设组，架构组。根据每个人擅长的东西，建立研发人员画像，划分项目归属 小程序 后台管理 可视化等</p>
+<p><strong>其中业务层：</strong> 主要负责依赖于基础建设的部分，完成业务开发，要求对业务逻辑更加清楚。</p>
+<p><strong>基础建设层：</strong> 主要是根据业务提炼技术方向的基础平台和组件部分，前端服务部分，也可以做一些对开发流程有帮助、优化的工具。</p>
+<p><strong>架构层：</strong> 主要是进行技术的预研究，大型技术架构的整理与搭建，时兴技术的学习与成品演示。</p>
+<p>然而就算这样分层，其实其具体的工作还是分不开的，不太可能有些人只做业务或者架构，也和大家的职业诉求有关。比较好的融合是每个人的各个层次的工作都有涉及，只是比重不同。就结果论导向而言，是需要各个层次有其对应的负责人，首先保证技术成果，业务成果，然后是尽可能的满足大家每个阶段对技术的成长、使用的需求。</p>
+<h4 id="与其他职能耦合关系"><a href="#与其他职能耦合关系" class="headerlink" title="与其他职能耦合关系"></a>与其他职能耦合关系</h4><p>####与后端</p>
+<p>主要体现在后端提供业务需要的数据接口或者业务逻辑接口。所以开发开始之前会有详细的接口评审，接口文档约定。</p>
+<h5 id="与产品"><a href="#与产品" class="headerlink" title="与产品"></a>与产品</h5><p>恐怕与产品沟通最多的是前端了，这里沟通的部分主要工作会分为以下几种：</p>
+<ol>
+<li><p>ui验收，符合设计稿，ui验收有时候也会与设计师沟通。</p>
+</li>
+<li><p>交互验收，保证用户体验，也可能是与交互设计师、测试沟通。 </p>
+</li>
+<li><p>性能，尤其用户高频页面，保证用户在各种条件下的性能包括显示速度、动画、延迟等。 </p>
+</li>
+<li><p>兼容问题，需要知道产品对兼容性的要求 </p>
+</li>
+<li><p>功能开发以及验收，主要是与需求对应，主要是产品验收</p>
+</li>
+</ol>
+<h5 id="与测试"><a href="#与测试" class="headerlink" title="与测试"></a>与测试</h5><ol>
+<li>确认测试用例范围以及细节 </li>
+<li>测试阶段的测试以及验收，可以抽样检测 </li>
+<li>不同测试环境以及不同功能的回归测试 </li>
+<li>测试的常识：测试问题分类，以及对应不同问题的处理方案，责任问题鉴定以及分工</li>
+</ol>
+<p>#####与设计</p>
+<ol>
+<li>确认ui效果，包括基本效果以及交互效果 </li>
+<li>确认需要从设计中获取的素材 </li>
+<li>确认需要从设计中年获取的样式代码</li>
+<li> 与设计统一ui标准，减少重复工作量，约定组件标准以及可复用组件</li>
+</ol>
+<h2 id="3-人员归属方式"><a href="#3-人员归属方式" class="headerlink" title="3.人员归属方式"></a>3.人员归属方式</h2><h3 id="资源池"><a href="#资源池" class="headerlink" title="资源池"></a>资源池</h3><p>如果按照资源池的形式，是最符合人员层次以及大前端团队的矩阵的，可以最大程度的实现价值最大化，以及充分利用人员资源，也可以抽调部分人完成较大的技术突破，同时也可以较好的完成前端内部职能的技术沟通以及学习。</p>
+<p>缺点：对业务会相对不够清楚，尤其是业务模块没有固定归属，随机分配的时候。所以针对这种情况，建议分业务流分模块分配具体的人，其次针对每个业务都设置ab角色。</p>
+<h3 id="项目组"><a href="#项目组" class="headerlink" title="项目组"></a>项目组</h3><p>按照项目组的优势就是人员可以长期投入到项目中，对项目以及业务流要较大的熟悉，更容易形成与其他职能的默契协作。</p>
+<p>缺点：资源不能更好的集中使用，对技术的视野也会因为这个受限。对其他人的业务范围以及技术细节并不清楚。建议，即使按照项目团队，也要在职能角度，让一些人有公共的上级可以进行职能的辅助以及考核。</p>
+<h2 id="4-制定规范"><a href="#4-制定规范" class="headerlink" title="4. 制定规范"></a>4. 制定规范</h2><p>通过代码规范来约束开发人员，统一的编码规范对团队项目的长远维护不无裨益. 一致性的代码规范可以增强团队开发协作效率、提高代码质量、减少遗留系统维护的负担</p>
+<ol>
+<li><p>制定代码规范，约束代码风格。</p>
+</li>
+<li><p>开发需求规范，版本规范，版本控制系统规范，git提交信息规范，定期code review。</p>
+</li>
+<li><p>流程规范，一切需求tapd建立，保证需求可追踪。</p>
+</li>
+</ol>
+<h2 id="5-员工状态"><a href="#5-员工状态" class="headerlink" title="5. 员工状态"></a>5. 员工状态</h2><p>​    通过员工状态来把控资源池状况和获取计划性任务情况,营造技术氛围</p>
+<ol>
+<li>通过晨会来把控开发人员工作状态</li>
+<li>通过对应的TL获取开发人员工作状态</li>
+<li>周一主动获取员工计划性的任务和工作状态</li>
+<li>鼓励成员写技术博客，或者建立自己的团队专栏</li>
+<li>新人培训，保证新人更快融入</li>
+</ol>
 
                 
             </div>
@@ -648,7 +526,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">blinkfox</a>
+                    <a href="/about" rel="external nofollow noreferrer">Homastin</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -658,7 +536,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://homastin.cn/2018/09/21/ruan-jian-she-ji/she-ji-mo-shi/java-mian-xiang-dui-xiang-she-ji-zhi-zhuang-tai-mo-shi/">http://homastin.cn/2018/09/21/ruan-jian-she-ji/she-ji-mo-shi/java-mian-xiang-dui-xiang-she-ji-zhi-zhuang-tai-mo-shi/</a>
+                    <a href="http://homastin.cn/2022/02/22/qian-duan/da-qian-duan-zu-gui-hua/">http://homastin.cn/2022/02/22/qian-duan/da-qian-duan-zu-gui-hua/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -671,7 +549,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">blinkfox</a>
+                    <a href="/about" target="_blank">Homastin</a>
                     !
                 </span>
             </div>
@@ -695,15 +573,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/Java/">
-                                    <span class="chip bg-color">Java</span>
-                                </a>
-                            
-                                <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
-                                    <span class="chip bg-color">设计模式</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -871,64 +741,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
-            <div class="card">
-                <a href="/2018/09/24/ruan-jian-gong-ju/git/git-zhi-shi-dian-zheng-li/">
-                    <div class="card-image">
-                        
-                        <img src="https://statics.sh1a.qingstor.com/2018/09/24/git.jpg" class="responsive-img" alt="Git知识点整理">
-                        
-                        <span class="card-title">Git知识点整理</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2018-09-24
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/" class="post-category">
-                                    软件工具
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Git/">
-                        <span class="chip bg-color">Git</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2018/09/20/ruan-jian-she-ji/she-ji-mo-shi/java-mian-xiang-dui-xiang-she-ji-zhi-dai-li-mo-shi/">
+                <a href="/2022/02/22/qian-duan/da-qian-duan-zu-gui-hua/">
                     <div class="card-image">
                         
-                        <img src="https://statics.sh1a.qingstor.com/2018/09/20/proxy.jpg" class="responsive-img" alt="Java面向对象设计之代理模式">
                         
-                        <span class="card-title">Java面向对象设计之代理模式</span>
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -939,14 +763,52 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2018-09-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-22
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Homastin
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/08/30/qian-duan/zao-qi-ge-ren-bi-ji/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="早期个人笔记">
+                        
+                        <span class="card-title">早期个人笔记</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-30
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/" class="post-category">
-                                    软件设计
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
                                 </a>
                             
                             
@@ -956,12 +818,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Java/">
-                        <span class="chip bg-color">Java</span>
+                    <a href="/tags/Vue/">
+                        <span class="chip bg-color">Vue</span>
                     </a>
                     
-                    <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
-                        <span class="chip bg-color">设计模式</span>
+                    <a href="/tags/Javascript/">
+                        <span class="chip bg-color">Javascript</span>
                     </a>
                     
                 </div>

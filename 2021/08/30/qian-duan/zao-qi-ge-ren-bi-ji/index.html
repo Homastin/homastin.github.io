@@ -511,12 +511,12 @@ git remote add origin git@182.254.xx.xx:user/test.git
 git push 一u origin 一all
 git push 一u origin 一tags <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p></p>
 <h2 id="5-ruduce的高级用法"><a href="#5-ruduce的高级用法" class="headerlink" title="5.ruduce的高级用法"></a>5.ruduce的高级用法</h2><p><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904063729926152">https://juejin.cn/post/6844904063729926152</a></p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">  reduce 支持两个参数 <span class="token number">1</span> callback <span class="token number">2</span> initalValue
-   <span class="token number">1</span> 没有initalValue
-  那么callback 里的prev curr index arr 中prev 就是数组中的第一个，curr是第二个 index为<span class="token number">1</span>
-  <span class="token number">2</span> 有initalValue
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">  reduce 支持两个参数 1 callback 2 initalValue
+   1 没有initalValue
+  那么callback 里的prev curr index arr 中prev 就是数组中的第一个，curr是第二个 index为1
+  2 有initalValue
   那么callback 中的prev 为initalValue curr 为 数组第一项
-Note<span class="token operator">:</span> 空数组没有initalValue 将会是一个error<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+Note: 空数组没有initalValue 将会是一个error<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="6-代码的简洁之道"><a href="#6-代码的简洁之道" class="headerlink" title="6.代码的简洁之道"></a>6.代码的简洁之道</h2><p>  通过 flag 的 true 或 false，来判断执行逻辑，违反了一个函数干一件事的原则。</p>
 <p>  Bad:</p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">createFile</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> temp</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -886,18 +886,17 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/08/30/qian-duan/zao-qi-ge-ren-bi-ji/">
+                <a href="/2022/02/22/qian-duan/da-qian-duan-zu-gui-hua/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="早期个人笔记">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">早期个人笔记</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -907,33 +906,16 @@ console<span class="token punctuation">.</span><span class="token function">log<
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-30
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-02-22
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                    前端
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Homastin
                             
                         </span>
                     </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Vue/">
-                        <span class="chip bg-color">Vue</span>
-                    </a>
-                    
-                    <a href="/tags/Javascript/">
-                        <span class="chip bg-color">Javascript</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -1108,7 +1090,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2021</span>
+                <span id="year">2019-2022</span>
             
             <span id="year">2019</span>
             <a href="/about" target="_blank">Homastin</a>
